@@ -31,6 +31,8 @@ Route::get('products', [ServiceController::class, 'products'])->name('products')
 Route::post('/updatecontact', [IndexController::class, 'updatecontact'])->name('updatecontact');
 Route::get('/privacyPolicy', [IndexController::class, 'privacyPolicy'])->name('privacyPolicy');
 Route::get('/termsandcondition', [IndexController::class, 'termsandcondition'])->name('termsandcondition');
+Route::get('/financialreport', [IndexController::class, 'financialreport'])->name('financialreport');
+Route::get('/newsandnotice', [IndexController::class, 'newsandnotice'])->name('newsandnotice');
 Route::get('/migrate', function () {
     Artisan::call('migrate');
     return 'Migration has been successfully';

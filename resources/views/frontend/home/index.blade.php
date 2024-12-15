@@ -1,7 +1,10 @@
 @extends('frontend.layout.app')
 @section('body')
+
+@include('frontend.home.popup');
+
     @include('frontend.home.banner')
-   
+
     @include('frontend.home.about')
     <div class="mx-auto  mt-14  container">
 

@@ -15,7 +15,9 @@ use App\Models\Inquiry;
 use App\Models\OtherSetting;
 use App\Models\Page;
 use App\Models\Partner;
+use App\Models\Popup;
 use App\Models\Product;
+use App\Models\Report;
 use App\Models\Service;
 use App\Models\Team;
 use App\Models\Testimonial;
@@ -37,7 +39,9 @@ class IndexController extends Controller
         $blogs = Blog::latest()->limit(3)->get();
         $banners = Banner::orderBy("order", "asc")->get();
         $partners=Partner::get();
-        return view("frontend.home.index", compact("services", "products", "videos", "banners", "testimonials", "teams", "blogs", 'about', 'faqs' ,'partners'));
+        $popup = Popup::get();
+
+        return view("frontend.home.index", compact("services","popup", "products", "videos", "banners", "testimonials", "teams", "blogs", 'about', 'faqs' ,'partners'));
     }
 
     public function submitInquery(StoreInquiryRequest $request, Product $submitInquery)
@@ -89,5 +93,23 @@ class IndexController extends Controller
 
         $data = Page::where('id', 2)->first();
         return view('frontend.home.termandpolicy', compact('data'));
+    }
+
+
+    public function newsandnotice()
+    {
+
+        $title="News and Reports";
+        $data = Report::where('type', 'newsandnotice')->orderBy('order' ,'asc')->get();
+        return view('frontend.home.report' , compact('data' ,'title'));
+    }
+
+    public function financialreport()
+    {
+
+        $title="Financial Reports";
+
+        $data = Report::where('type', 'financialreport' )->orderBy('order' ,'asc')->get();
+        return view('frontend.home.report', compact('data', 'title'));
     }
 }

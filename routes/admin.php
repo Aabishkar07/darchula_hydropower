@@ -11,8 +11,10 @@ use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\OtherSettingController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\PartnerController;
+use App\Http\Controllers\Admin\PopupController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\ReportController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\VideoController;
@@ -44,4 +46,7 @@ Route::middleware(["admin"])->group(function () {
     Route::resource('pages', PageController::class);
     Route::resource('faqs', FaqController::class);
     Route::resource('gallery', GalleryController::class);
+    Route::resource('popup', PopupController::class);
+    Route::resource('report', ReportController::class);
+
 });
