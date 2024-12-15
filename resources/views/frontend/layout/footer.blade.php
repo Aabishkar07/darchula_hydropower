@@ -9,10 +9,10 @@
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
 
             <div class="lg:col-span-2">
-                <a href='{{ route('home') }}'>
+                <div>
 
                     <div class="mb-4 text-3xl font-bold text-white">Darchula Hydropower</div>
-                </a>
+                </div>
                 {{-- <a href='javascript:void(0)'><img src="https://readymadeui.com/readymadeui-white.svg" alt="logo"
                         class='mb-8 w-44' /></a> --}}
                 <p class="text-sm text-gray-300">At Darchula Hydropower , we provide

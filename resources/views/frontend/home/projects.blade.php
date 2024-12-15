@@ -1,6 +1,3 @@
-<!-- HTML and Blade -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .nav-tabs .nav-link.active {
             background-color: #f8f9fa;
@@ -20,7 +17,6 @@
     </style>
 
 
-<body>
     <div class="container my-5">
         <!-- Service Tabs -->
         <ul class="nav nav-tabs" id="projectTabs" role="tablist">
@@ -84,6 +80,5 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
 

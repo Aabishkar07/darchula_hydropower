@@ -1,7 +1,7 @@
 @extends('frontend.layout.app')
 @section('body')
 
-@include('frontend.home.popup');
+@include('frontend.home.popup')
 
     @include('frontend.home.banner')
 

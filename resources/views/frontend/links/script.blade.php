@@ -43,4 +43,7 @@
     ::-webkit-scrollbar-track {
         background-color: #e2dddf;
     }
+    a{
+        text-decoration: none !important;
+    }
 </style>
