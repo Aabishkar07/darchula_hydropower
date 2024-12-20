@@ -17,11 +17,10 @@
 
 
     </div>
-    <div x-data="{ dropdownOpen: false }" class="relative shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-9 w-9 rounded-full mr-3">
+    <div x-data="{ dropdownOpen: false }" class="relative  h-9 w-9 rounded-full mr-3">
         <button @click="dropdownOpen = ! dropdownOpen"
             class="relative block overflow-hidden rounded-full h-9 w-9 focus:outline-none">
-            <img class="object-cover w-full h-full " src="{{ asset('images/su-logo.png') }}" alt="tagphoto">
-        </button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path> <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path> <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path> </svg>         </button>
 
         <div x-cloak x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 z-10 w-full h-full">
         </div>
