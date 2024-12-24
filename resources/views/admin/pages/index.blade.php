@@ -22,7 +22,7 @@
         <div class="flex-1">
             <h2 class="w-full text-2xl font-bold text-secondary">Pages</h2>
         </div>
-        {{-- <div class="text-right "> <a href="{{ route('admin.pages.create') }} "
+        <div class="text-right "> <a href="{{ route('admin.pages.create') }} "
                 class="flex bg-[#213343] items-center border-[#213343] border hover:bg-transparent hover:text-[#213343] text-white py-2 text-xs font-bold uppercase px-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-400 ">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24"
                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
@@ -32,7 +32,7 @@
                     <path d="M5 12l14 0"></path>
                 </svg>
                 Add page</a>
-        </div> --}}
+        </div>
     </div>
 
 

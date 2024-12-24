@@ -32,9 +32,7 @@
   </h2>
 
   </div> --}}
-<header
-  class="ezy__header42 light py-14 md:py-24 bg-white container text-zinc-900 relative overflow-hidden z-10"
->
+<header class="container relative z-10 overflow-hidden bg-white light py-14 md:py-24 text-zinc-900">
 
 
 
@@ -46,43 +44,31 @@
 
 
 
-  <div class="container px-4 mx-auto">
-    <div class="grid grid-cols-12 gap-6 items-center">
-      <div
-        class="col-span-12 lg:col-span-7 xl:col-span-6 text-center lg:text-start mb-12 lg:mb-0"
-      >
-        <h2
-          class="text-3xl font-bold leading-tight tracking-wide lg:text-7xl mb-6"
-        >
+    <div class="container px-4 mx-auto">
+        <div class="grid items-center grid-cols-12 gap-6">
+            <div class="col-span-12 mb-12 text-center lg:col-span-7 xl:col-span-6 lg:text-start lg:mb-0">
+                <h2 class="mb-6 text-3xl font-bold leading-tight tracking-wide lg:text-7xl">
 
-          Message From Chairperson
-        </h2>
-        <div class="max-w-xl">
-          <p class="text-[17px] leading-relaxed opacity-80 my-12">
-           {!!$testimonials->description !!}
-          </p>
+                    Message From Chairperson
+                </h2>
+                <div class="max-w-xl">
+                    <p class="text-[17px] leading-relaxed opacity-80 my-12">
+                        {!! $testimonials->description ?? '' !!}
+                    </p>
+                </div>
+                <button class="px-8 py-3 font-medium text-white bg-blue-600 rounded-full hover:bg-opacity-90">
+                    {{ $testimonials->title ?? "" }}
+                </button>
+            </div>
+            <div class="relative col-span-12 text-center lg:col-span-5">
+
+
+                <div class="relative">
+                    <img src="{{ asset('uploads/' . $testimonials->featured_image ) }}" alt=""
+                        class="h-auto max-w-full mx-auto rounded-full" />
+                    <div class="absolute w-[500px] h-[500px] left-0 top-0 bg-slate-100  rounded-full -z-20"></div>
+                </div>
+            </div>
         </div>
-        <button
-          class="py-3 px-8 font-medium text-white bg-blue-600 hover:bg-opacity-90 rounded-full"
-        >
-        {{ $testimonials->title }}
-    </button>
-      </div>
-      <div class="col-span-12 lg:col-span-5 relative text-center">
-
-
-        <div class="relative">
-          <img
-            src="{{ asset('uploads/' . $testimonials->featured_image ?? "") }}"
-            alt=""
-            class="max-w-full h-auto rounded-full mx-auto"
-          />
-          <div
-            class="absolute w-[500px] h-[500px] left-0 top-0 bg-slate-100  rounded-full -z-20"
-          ></div>
-        </div>
-      </div>
     </div>
-  </div>
 </header>
-
