@@ -44,7 +44,7 @@
               <h5 class="text-xl font-medium">Related Projects</h5>
             </div>
 
-            <!-- Blog Items -->
+           
             @foreach ($otherproducts as $key => $others)
               <a href="{{ route('productsingle', $others->slug) }}" class="block">
                 <div class="flex justify-between items-start gap-4 mb-4">
