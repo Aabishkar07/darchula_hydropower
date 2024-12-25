@@ -43,32 +43,33 @@
 
 
 
+    @if ($testimonials)
+        <div class="container px-4 mx-auto">
+            <div class="grid items-center grid-cols-12 gap-6">
+                <div class="col-span-12 mb-12 text-center lg:col-span-7 xl:col-span-6 lg:text-start lg:mb-0">
+                    <h2 class="mb-6 text-3xl font-bold leading-tight tracking-wide lg:text-7xl">
 
-    <div class="container px-4 mx-auto">
-        <div class="grid items-center grid-cols-12 gap-6">
-            <div class="col-span-12 mb-12 text-center lg:col-span-7 xl:col-span-6 lg:text-start lg:mb-0">
-                <h2 class="mb-6 text-3xl font-bold leading-tight tracking-wide lg:text-7xl">
-
-                    Message From Chairperson
-                </h2>
-                <div class="max-w-xl">
-                    <p class="text-[17px] leading-relaxed opacity-80 my-12">
-                        {!! $testimonials->description ?? '' !!}
-                    </p>
+                        Message From Chairperson
+                    </h2>
+                    <div class="max-w-xl">
+                        <p class="text-[17px] leading-relaxed opacity-80 my-12">
+                            {!! $testimonials->description ?? '' !!}
+                        </p>
+                    </div>
+                    <button class="px-8 py-3 font-medium text-white bg-blue-600 rounded-full hover:bg-opacity-90">
+                        {{ $testimonials->title ?? '' }}
+                    </button>
                 </div>
-                <button class="px-8 py-3 font-medium text-white bg-blue-600 rounded-full hover:bg-opacity-90">
-                    {{ $testimonials->title ?? "" }}
-                </button>
-            </div>
-            <div class="relative col-span-12 text-center lg:col-span-5">
+                <div class="relative col-span-12 text-center lg:col-span-5">
 
 
-                <div class="relative">
-                    <img src="{{ asset('uploads/' . $testimonials->featured_image ) }}" alt=""
-                        class="h-auto max-w-full mx-auto rounded-full" />
-                    <div class="absolute w-[500px] h-[500px] left-0 top-0 bg-slate-100  rounded-full -z-20"></div>
+                    <div class="relative">
+                        <img src="{{ asset('uploads/' . $testimonials->featured_image) }}" alt=""
+                            class="h-auto max-w-full mx-auto rounded-full" />
+                        <div class="absolute w-[500px] h-[500px] left-0 top-0 bg-slate-100  rounded-full -z-20"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    @endif
 </header>
