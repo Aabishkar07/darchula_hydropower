@@ -1,5 +1,11 @@
-on: push
+on:
+  push:
+    branches:
+      - main # Replace 'main' with the name of the branch you want to trigger the deployment on
+      - develop # Add other branches if needed
+
 name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
