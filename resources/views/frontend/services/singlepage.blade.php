@@ -40,7 +40,6 @@
         </div>
 
         <div class="col-span-12 md:col-span-4 lg:col-span-3 lg:col-start-9 px-4 md:pl-6 lg:pl-0">
-            <!-- Header Section -->
             <div class="bg-stone-900 bg-opacity-90  text-white rounded-t-lg py-4 px-3 mb-4">
               <h5 class="text-xl font-medium">Related Projects</h5>
             </div>
