@@ -7,9 +7,10 @@
 
 <header class='flex border-b bg-white font-sans min-h-[70px] tracking-wide relative z-50'>
     <div class='flex flex-wrap items-center justify-between sm:px-10 px-4 py-3 gap-4 w-full max-w-screen-2xl mx-auto'>
-      <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui.svg" alt="logo" class='w-32' />
-      </a>
+      {{-- <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui.svg" alt="logo" class='w-32' />
+      </a> --}}
 
+      <h1 class="text-xl">Darchula Hydropower </h1>
       <div id="collapseMenu"
         class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
         <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
