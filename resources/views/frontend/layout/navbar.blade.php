@@ -121,14 +121,14 @@
 
 
         <div class="flex space-x-6">
-            <a href="{{ $setting->youtube }}">
+            <a target="_blank" href="{{ $setting->youtube }}">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" stroke-width="2">
                     <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"></path>
                     <path d="M10 9l5 3l-5 3z"></path>
                   </svg>
                               </a>
 
-            <a href="{{ $setting->facebook }}">
+            <a target="_blank" href="{{ $setting->facebook }}">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="20px" class="cursor-pointer" viewBox="0 0 512 512">
               <path fill="#1877f2"
@@ -140,7 +140,7 @@
             </svg>
             </a>
 
-            <a href="{{ $setting->instagram }}">
+            <a target="_blank" href="{{ $setting->instagram }}">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="20px" class="cursor-pointer" viewBox="0 0 24 24">
               <linearGradient id="a" x1="-37.106" x2="-26.555" y1="-72.705" y2="-84.047"

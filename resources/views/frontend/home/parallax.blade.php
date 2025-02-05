@@ -1,15 +1,13 @@
 <section class="justify-center flex-1 py-4 lg:py-10">
     <div class="relative bg-center bg-no-repeat bg-cover"
-        style="min-height: 400px; background-image: url('https://web.nepalnews.com/storage/story/1024/hydropower1640592434_1024.jpg'); background-attachment: fixed;">
+        style="min-height: 400px; background-image: url('{{ asset('uploads/' . $about->top_image) }}'); background-attachment: fixed;">
         <div
             class="absolute inset-0 flex flex-col items-center justify-center p-10 text-center text-white bg-black opacity-60">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-2xl font-bold tracking-wide text-gray-100 my-7 md:text-5xl">
+                <h2 class="text-2xl font-bold tracking-wide text-white my-7 md:text-5xl">
                     Darchula Hydropower
                 </h2>
-                <p class="mb-8  font-medium text-[fe0000] md:text-lg">
-                    Powering Progress for Hydro
-                </p>
+
                 <div class="flex flex-wrap items-center justify-center">
                     <a href="{{ route('contact') }}"
                         class="inline-flex items-center px-4 py-2 my-4 font-bold text-white bg-transparent border border-white rounded hover:bg-white hover:text-black">

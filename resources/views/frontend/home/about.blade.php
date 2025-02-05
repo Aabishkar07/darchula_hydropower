@@ -55,7 +55,7 @@
             {!! $about->description ?? '' !!}
           </p>
 
-          <div class="grid grid-cols-12">
+          {{-- <div class="grid grid-cols-12">
             <div class="col-span-12 lg:col-span-4">
               <a href="{{ route('about') }}">
                 <button
@@ -65,7 +65,7 @@
               </button>
               </a>
             </div>
-          </div>
+          </div> --}}
         </div>
       </div>
     </div>
