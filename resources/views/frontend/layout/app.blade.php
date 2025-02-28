@@ -54,7 +54,7 @@
             font-size: 1rem;
         }
     </style>
-    <link rel="shortcut icon" href="{{ asset('images/saurya_pellet.png') }}">
+    {{-- <link rel="shortcut icon" href="{{ asset('images/saurya_pellet.png') }}"> --}}
 
     @include('frontend.links.script')
 
