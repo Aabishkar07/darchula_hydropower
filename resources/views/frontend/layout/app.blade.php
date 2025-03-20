@@ -8,12 +8,17 @@
     <title>Darchula Hydropower</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <style>
         body {
-            font-family: "Mulish", serif !important;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
         }
     </style>
 
@@ -54,11 +59,12 @@
             font-size: 1rem;
         }
     </style>
-    {{-- <link rel="shortcut icon" href="{{ asset('images/saurya_pellet.png') }}"> --}}
+    <link rel="shortcut icon" href="{{ asset('images/darchulspowerlogo.png') }}">
 
     @include('frontend.links.script')
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
