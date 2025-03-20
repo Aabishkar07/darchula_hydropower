@@ -40,10 +40,10 @@
 
                 <div class="item bg-white p-6 rounded-xl
 
-                    flex items-center justify-center h-20">
+                    flex items-center justify-center h-32">
                     <img src="{{ asset('uploads/' . $partner->featured_image) }}"
                         alt="Logo 1"
-                        class="max-h-16 max-w-full
+                        class="max-h-32 max-w-full
                         " />
                 </div>
                 @endforeach
