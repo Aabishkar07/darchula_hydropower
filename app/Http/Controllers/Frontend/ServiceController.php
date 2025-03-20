@@ -15,11 +15,15 @@ class ServiceController extends Controller
 
 
         $products = Product::where("service_id", $service->id)->get();
-        return view('frontend.services.serviceproduct', compact("products",'service'));
+
+
+
+        return view('frontend.services.serviceproduct', compact("products",'service' ));
     }
     public function productsingle(Product $product)
     {
-        return view('frontend.services.singlepage', compact("product"));
+        $otherproducts = Product::where("id", "!=", $product->id)->get();
+        return view('frontend.services.singlepage', compact("product",'otherproducts'));
     }
 
     public function services()
