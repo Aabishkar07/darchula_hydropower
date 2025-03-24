@@ -8,12 +8,10 @@
     </div>
 
     <div class="flex flex-col md:flex-row">
-        <!-- can help image -->
+
         {{-- <div class="mr-0 md:mr-8 mt-1  md:mb-0 max-sm:mb-3">
             <img class="w-[300px] h-[440px] mx-auto" src="{{ asset('images/World largest dam.jpg') }}" alt="can_help_banner">
           </div> --}}
-
-        <!-- end can help image -->
 
         <div class="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">
             @foreach ($videos as $video)
