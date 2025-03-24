@@ -23,7 +23,7 @@
 @endif --}}
 
 
-@if ($testimonials->count()>0)
+{{-- @if ($testimonials->count()>0) --}}
 
 <div class="px-9 mx-auto max-md:px-2 max-w-screen-2xl max-lg:max-w-3xl max-sm:max-w-sm md:mt-10">
 
@@ -82,4 +82,4 @@
     </div>
 </div>
 
-@endif
+{{-- @endif --}}

@@ -1,5 +1,5 @@
 
-@if ($testimonialsecond->count()>0)
+@if ($testimonialsecond)
 <div class="px-9 mx-auto max-md:px-2 max-w-screen-2xl max-lg:max-w-3xl max-sm:max-w-sm md:mb-10">
 
     <div class="px-9 slide-in-left">
