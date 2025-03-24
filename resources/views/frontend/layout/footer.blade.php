@@ -2,7 +2,10 @@
     $setting = getSetting();
 
     $services = getServices();
+    $about= getabout();
 @endphp
+
+
 
 <footer class="font-sans tracking-wide bg-gray-50  pt-12  tracking-wide">
     <div class="px-6 mx-auto py-14 sm:px-10 max-w-screen-2xl">
@@ -15,10 +18,7 @@
                         class='w-20 pb-2' />
                 </a>                </div>
 
-                <p class="text-sm ">At Darchula Hydropower , we provide
-                    high-quality, affordable feed to support healthy, productive, and profitable farming. As a trusted
-                    partner, we deliver exceptional nutritional solutions, empowering farmers to thrive and build a
-                    sustainable future in agriculture and poultry farming</p>
+                <p class="text-sm">{!! Str::limit(strip_tags($about->description), 208, '.') !!}</p>
 
                     <ul class="flex flex-wrap mt-3 gap-4 gap-x-6">
                         <li><a target="_blank" href="{{ $setting->facebook }}" class="text-xl text-gray-400">
@@ -86,7 +86,7 @@
 
                 </ul> --}}
                 <div class="space-y-4">
-                    <p><a href="{{ route('teams') }}" class="text-sm  ">Our Teams</a></p>
+                    <p><a href="{{ route('teams') }}" class="text-sm  ">Our Team</a></p>
 
                     <p><a href="{{ route('contact') }}" class="text-sm  ">Contact</a></p>
                     <p><a href="{{ route('termsandcondition') }}" class="text-bas">Terms

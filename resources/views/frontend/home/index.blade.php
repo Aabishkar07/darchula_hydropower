@@ -20,13 +20,15 @@
 
     @include('frontend.components.supplierandpartners')
     @include('frontend.home.parallax')
-
+    @include('frontend.home.testimonials')
+    @include('frontend.home.testimonialsecond')
     @include('frontend.home.sauryapellet_video')
 
 
 
     {{-- @include('frontend.home.teams') --}}
-    @include('frontend.home.testimonials')
+
+
 
     <div class="mx-auto container">
         <div class="col-span-1">

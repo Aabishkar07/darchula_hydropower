@@ -1,36 +1,11 @@
-{{--
-@if ($testimonials->count()>0)
 
-
-<div class="my-10">
-    <div class="px-10 mx-auto max-w-screen-2xl">
-        <div class="grid gap-6 lg:grid-cols-3 max-lg:max-w-2xl">
-            <div class="col-span-2">
-                <h2 class="text-3xl font-extrabold text-gray-800">What our happy client say</h2>
-
-
-            </div>
-        </div>
-
-        <div
-            class="grid grid-cols-1 px-10 mt-7 max-sm:px-3 max-md:mt-10 gap-x-6 max-md:px-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
-            @foreach ($testimonials as $tesimonial)
-                @include('frontend.components.testimomials')
-            @endforeach
-        </div>
-    </div>
-</div>
-@endif --}}
-
-
-@if ($testimonials->count()>0)
-
-<div class="px-9 mx-auto max-md:px-2 max-w-screen-2xl max-lg:max-w-3xl max-sm:max-w-sm md:mt-10">
+@if ($testimonialsecond->count()>0)
+<div class="px-9 mx-auto max-md:px-2 max-w-screen-2xl max-lg:max-w-3xl max-sm:max-w-sm md:mb-10">
 
     <div class="px-9 slide-in-left">
         <div class="flex justify-between gap-x-0 items-center  ">
             <h2 class="max-sm:text-lg  text-2xl  text-left  md:text-2xl font-semibold ">
-                Message From {{ $testimonials->designation }}
+                Message From {{ $testimonialsecond->designation }}
             </h2>
         </div>
         <div class="flex py-4">
@@ -46,7 +21,7 @@
             <div class="relative">
                 <div class="absolute -inset-2 bg-white rounded-lg blur opacity-25"></div>
                 <img
-                    src="{{ asset('uploads/' . $testimonials->featured_image ) }}"
+                    src="{{ asset('uploads/' . $testimonialsecond->featured_image ) }}"
                     class="relative w-[280px] h-[280px] object-cover rounded-lg shadow-lg"
                     alt="Testimonial"
                 />
@@ -69,13 +44,13 @@
             <!-- Testimonial Text -->
             <div class="relative">
                 <p class="text-gray-700 text-lg italic leading-relaxed">
-                    {!! $testimonials->description !!}
+                    {!! $testimonialsecond->description !!}
                 </p>
             </div>
 
             <!-- Author Information -->
             <div class="mt-8 border-l-4 border-black pl-4">
-                <p class="text-gray-900 text-xl font-semibold">{{ $testimonials->designation }}</p>
+                <p class="text-gray-900 text-xl font-semibold">{{ $testimonialsecond->designation }}</p>
                 {{-- <p class="text-black text-sm font-medium mt-1">{{ $testimonials->title }}</p> --}}
             </div>
         </div>
