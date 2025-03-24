@@ -36,12 +36,14 @@ class IndexController extends Controller
         $faqs = Faq::latest()->limit(4)->get();
         $teams = Team::latest()->get();
         $testimonials = Testimonial::first();
+        $testimonialsecond = Testimonial::skip(1)->take(1)->first();
+
         $blogs = Blog::latest()->limit(3)->get();
         $banners = Banner::orderBy("order", "asc")->get();
         $partners=Partner::get();
         $popup = Popup::get();
 
-        return view("frontend.home.index", compact("services","popup", "products", "videos", "banners", "testimonials", "teams", "blogs", 'about', 'faqs' ,'partners'));
+        return view("frontend.home.index", compact("services","popup", "products", "videos", "banners", "testimonials", "teams", "blogs", 'about', 'faqs' ,'partners','testimonialsecond'));
     }
 
     public function teams(){

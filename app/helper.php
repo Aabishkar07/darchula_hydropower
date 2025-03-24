@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\OtherSetting;
+use App\Models\Page;
 use App\Models\Product;
 use App\Models\Service;
 
@@ -16,5 +17,12 @@ function getServices()
 function getproducts()
 {
     return Product::get();
+}
+
+
+function getabout(){
+    $about = Page::where('id', 3)->first();
+
+    return $about;
 }
 
