@@ -11,8 +11,9 @@
             <div class="lg:col-span-2">
                 <div>
 
-                    <div class="mb-4 text-3xl font-bold ">Darchula Hydropower</div>
-                </div>
+                    <a href="{{ route('home') }}"><img src="{{ asset('images/darchulspowerlogo.png') }}" alt="logo"
+                        class='w-20 pb-2' />
+                </a>                </div>
 
                 <p class="text-sm ">At Darchula Hydropower , we provide
                     high-quality, affordable feed to support healthy, productive, and profitable farming. As a trusted
@@ -85,6 +86,8 @@
 
                 </ul> --}}
                 <div class="space-y-4">
+                    <p><a href="{{ route('teams') }}" class="text-sm  ">Our Teams</a></p>
+
                     <p><a href="{{ route('contact') }}" class="text-sm  ">Contact</a></p>
                     <p><a href="{{ route('termsandcondition') }}" class="text-bas">Terms
                         and Condition</a>

@@ -22,6 +22,7 @@ Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::get('gallery', [SauryaPalletController::class, 'gallery'])->name('allgallery');
 Route::get('videos', [SauryaPalletController::class, 'index'])->name('videos');
 Route::get('supplierandpartner', [SauryaPalletController::class, 'supplierandpartner'])->name('supplierandpartner');
+Route::get('teams', [IndexController::class, 'teams'])->name('teams');
 Route::get('services/{service:slug}', [ServiceController::class, 'servicesingle'])->name('servicesingle');
 Route::get('product/{product:slug}', [ServiceController::class, 'productsingle'])->name('productsingle');
 Route::get('blogs/{blog:slug}', [BlogController::class, 'blogsingle'])->name('blogsingle');

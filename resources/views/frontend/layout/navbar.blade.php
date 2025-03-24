@@ -95,7 +95,12 @@
                         Gallery
                     </a>
                 </li>
-
+                <li class="max-lg:border-b max-lg:py-3">
+                    <a href="{{ route('teams') }}"
+                        class="{{ request()->routeIs('teams') ? 'text-[#008d9b] font-bold' : 'text-gray-600 hover:text-[#008d9b] text-[15px] font-bold block' }}">
+                        Our Teams
+                    </a>
+                </li>
 
                 <li class="max-lg:border-b max-lg:py-3">
                     <a href="{{ route('allblogs') }}"
