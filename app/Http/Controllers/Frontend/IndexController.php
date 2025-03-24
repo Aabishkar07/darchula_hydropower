@@ -44,6 +44,11 @@ class IndexController extends Controller
         return view("frontend.home.index", compact("services","popup", "products", "videos", "banners", "testimonials", "teams", "blogs", 'about', 'faqs' ,'partners'));
     }
 
+    public function teams(){
+        $teams = Team::latest()->get();
+        return view('frontend.team.index' , compact('teams'));
+    }
+
     public function submitInquery(StoreInquiryRequest $request, Product $submitInquery)
     {
         $email = OtherSetting::first()->email;
