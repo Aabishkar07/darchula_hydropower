@@ -25,7 +25,7 @@
 
 
   <div class="">
-    <section class="container mx-auto px-4 py-12 mt-24">
+    <section class="container mx-auto px-4 py-12 ">
         <h2 class="text-center text-3xl font-bold mb-10
             ">
             Associated Partner
