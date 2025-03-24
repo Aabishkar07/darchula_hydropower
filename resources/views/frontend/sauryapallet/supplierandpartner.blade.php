@@ -3,7 +3,7 @@
 
 
  @include('frontend.components.supplierandpartners')
- @include('frontend.home.testimonials')
+ {{-- @include('frontend.home.testimonials') --}}
 
 
 @endsection

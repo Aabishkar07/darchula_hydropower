@@ -21,16 +21,16 @@ class SauryaPalletController extends Controller
     public function gallery()
     {
         $galleries = Gallery::latest()->get();
-        $tesimonials = Testimonial::latest()->get();
+        $testimonials = Testimonial::latest()->get();
 
-        return view('frontend.sauryapallet.gallery', compact("galleries", "tesimonials"));
+        return view('frontend.sauryapallet.gallery', compact("galleries", "testimonials"));
     }
 
     public function supplierandpartner()
     {
-        $suppilers = Partner::latest()->get();
-        $tesimonials = Testimonial::latest()->get();
+        $partners = Partner::latest()->get();
+        $testimonials = Testimonial::latest()->get();
 
-        return view('frontend.sauryapallet.supplierandpartner', compact("tesimonials", "suppilers"));
+        return view('frontend.sauryapallet.supplierandpartner', compact("testimonials", "partners"));
     }
 }
