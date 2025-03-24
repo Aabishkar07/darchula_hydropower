@@ -6,15 +6,15 @@
     @include('frontend.home.banner')
 
     @include('frontend.home.about')
-    <div class="mx-auto  mt-14  container">
+    {{-- <div class="mx-auto  mt-14  container">
 
         <div class="col-span-12">
             <h2 class="font-bold text-[25px] lg:text-[35px]  text-center leading-none">Our Projects</h2>
 
           </div>
-        {{-- @include('frontend.home.services') --}}
+        @include('frontend.home.services')
         @include('frontend.home.projects')
-    </div>
+    </div> --}}
 
 
 

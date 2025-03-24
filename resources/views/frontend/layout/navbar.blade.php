@@ -47,7 +47,7 @@
                 </li>
 
 
-                <li class='group max-lg:border-b max-lg:py-3 relative'>
+                {{-- <li class='group max-lg:border-b max-lg:py-3 relative'>
                     <a href=""
                         class='hover:text-[#008d9b] text-gray-600 text-[15px] font-bold lg:hover:fill-[#008d9b] block'>Projects<svg
                             xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
@@ -65,7 +65,7 @@
                                     {{ $service->title }}</a></li>
                         @endforeach
                     </ul>
-                </li>
+                </li> --}}
                 <li class='group max-lg:border-b max-lg:py-3 relative'>
                     <a href=""
                         class='hover:text-[#008d9b] text-gray-600 text-[15px] font-bold lg:hover:fill-[#008d9b] block'>Reports<svg
