@@ -5,16 +5,16 @@
         <div class="flex justify-between">
             <div class="text-2xl font-bold">Popup</div>
             <div class="text-right "> <a href="{{ route('admin.popup.create') }} "
-                class="flex bg-[#213343] items-center border-[#213343] border hover:bg-transparent hover:text-[#213343] text-white py-2 text-xs font-bold uppercase px-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-400 ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24"
-                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M12 5l0 14"></path>
-                    <path d="M5 12l14 0"></path>
-                </svg>
-                Add Popup</a>
-        </div>
+                    class="flex bg-[#213343] items-center border-[#213343] border hover:bg-transparent hover:text-[#213343] text-white py-2 text-xs font-bold uppercase px-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-400 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 5l0 14"></path>
+                        <path d="M5 12l14 0"></path>
+                    </svg>
+                    Add Popup</a>
+            </div>
         </div>
         <div class='p-3 mt-10 bg-white rounded-lg shadow product-table font-main'>
 
@@ -23,7 +23,7 @@
                     <thead class="p-10 font-normal">
                         <tr class="">
                             <th scope="col " class="p-2 font-semibold ">
-                               title
+                                title
                             </th>
 
 
@@ -52,9 +52,20 @@
 
 
                                 <td class="p-2" style="width: 100px;">
-                                    <img class="" src="{{ asset('uploads/' . $popup->image) }}" alt="Card"
-                                        style="width: 70px;">
+                                    @php
+                                        $extension = pathinfo($popup->image, PATHINFO_EXTENSION);
+                                    @endphp
+
+                                    @if (strtolower($extension) === 'pdf')
+                                        <iframe src="{{ asset('uploads/' . $popup->image) }}" width="100%"
+                                            height="100px"></iframe>
+                                        
+                                    @else
+                                        <img src="{{ asset('uploads/' . $popup->image) }}" alt="Card"
+                                            style="width: 70px;">
+                                    @endif
                                 </td>
+
 
                                 <td class="">
                                     <div>{{ $popup->order }}</div>

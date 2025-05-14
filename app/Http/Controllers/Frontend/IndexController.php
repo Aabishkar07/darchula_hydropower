@@ -40,15 +40,16 @@ class IndexController extends Controller
 
         $blogs = Blog::latest()->limit(3)->get();
         $banners = Banner::orderBy("order", "asc")->get();
-        $partners=Partner::get();
-        $popup = Popup::get();
+        $partners = Partner::get();
+        $popup = Popup::orderBy("order", "asc")->get();
 
-        return view("frontend.home.index", compact("services","popup", "products", "videos", "banners", "testimonials", "teams", "blogs", 'about', 'faqs' ,'partners','testimonialsecond'));
+        return view("frontend.home.index", compact("services", "popup", "products", "videos", "banners", "testimonials", "teams", "blogs", 'about', 'faqs', 'partners', 'testimonialsecond'));
     }
 
-    public function teams(){
+    public function teams()
+    {
         $teams = Team::latest()->get();
-        return view('frontend.team.index' , compact('teams'));
+        return view('frontend.team.index', compact('teams'));
     }
 
     public function submitInquery(StoreInquiryRequest $request, Product $submitInquery)
@@ -106,17 +107,17 @@ class IndexController extends Controller
     public function newsandnotice()
     {
 
-        $title="News and Reports";
-        $data = Report::where('type', 'newsandnotice')->orderBy('order' ,'asc')->get();
-        return view('frontend.home.report' , compact('data' ,'title'));
+        $title = "News and Reports";
+        $data = Report::where('type', 'newsandnotice')->orderBy('order', 'asc')->get();
+        return view('frontend.home.report', compact('data', 'title'));
     }
 
     public function financialreport()
     {
 
-        $title="Financial Reports";
+        $title = "Financial Reports";
 
-        $data = Report::where('type', 'financialreport' )->orderBy('order' ,'asc')->get();
+        $data = Report::where('type', 'financialreport')->orderBy('order', 'asc')->get();
         return view('frontend.home.report', compact('data', 'title'));
     }
 }

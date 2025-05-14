@@ -21,10 +21,12 @@ class ImageService
     {
         $destinationPath = public_path() . '/uploads/';
         $randomString = $this->randomString(8);
-        $imageName =  $name . "_" . $randomString . ".jpg";
+        $extension = $file->getClientOriginalExtension();
+        $imageName = $randomString . '.' . $extension;
         $file->move($destinationPath, $imageName);
         return $imageName;
     }
+
 
     public function imageDelete($filePath)
     {
